@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include\compiler">
+      <UniqueIdentifier>{65de7d43-7dd3-4595-93f2-d82f9bdc0f61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\engine">
+      <UniqueIdentifier>{ea9fdbfe-4e58-4bf8-ba2a-9073e83b1c9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\boost">
+      <UniqueIdentifier>{a1212e58-3a57-46ef-a7fe-78249e9d1b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\compiler">
+      <UniqueIdentifier>{cac40a03-d7b5-44ac-b786-ccbcacf07744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\engine">
+      <UniqueIdentifier>{67614092-b60b-446e-be78-bc0cf304f49b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include/kiml/stdafx.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/targetver.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/kiml.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/utils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/labels.h">
+      <Filter>include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/symbols.h">
+      <Filter>include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/stringpool.h">
+      <Filter>include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/opcodes.h">
+      <Filter>include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/compiler.h">
+      <Filter>include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/functions.h">
+      <Filter>include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/bytecode.h">
+      <Filter>include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/endian.hpp">
+      <Filter>include\boost</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/errmsg.h">
+      <Filter>include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/ast.h">
+      <Filter>include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/kiml.parser.h">
+      <Filter>include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/datatypes.h">
+      <Filter>include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/object.h">
+      <Filter>include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/states.h">
+      <Filter>include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/engine.h">
+      <Filter>include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="include/kiml/constants.h">
+      <Filter>include\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src/stdafx.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src/dllmain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src/kiml.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src/labels.cpp">
+      <Filter>src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src/compiler.cpp">
+      <Filter>src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src/functions.cpp">
+      <Filter>src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src/bytecode.cpp">
+      <Filter>src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src/errmsg.cpp">
+      <Filter>src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src/kiml.lexer.cpp">
+      <Filter>src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src/kiml.parser.cpp">
+      <Filter>src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src/engine.cpp">
+      <Filter>src\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src/states.cpp">
+      <Filter>src\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src/constants.cpp">
+      <Filter>src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src/stringpool.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src/symbols.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src/utils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="libkiml.rc">
+      <Filter>res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

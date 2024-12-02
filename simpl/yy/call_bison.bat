@@ -1,0 +1,1 @@
+bison simpl.yy -l -o"simpl.parser.cpp"

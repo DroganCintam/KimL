@@ -1,0 +1,1 @@
+flex -L -o"simpl.lexer.cpp" simpl.l
