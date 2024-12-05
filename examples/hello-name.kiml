@@ -1,0 +1,4 @@
+io.out "Hello, what's your name?\n"
+io.out ">>> "
+io.in string
+io.out "Nice to meet you, " & _pop() & ".\n"

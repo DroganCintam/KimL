@@ -1,0 +1,32 @@
+; declares the function
+func.decl int fact(int n) = fact
+
+; prompts for number n
+io.out "n = "
+
+; reads n from stdin and pushes to k-stack
+io.in int
+
+; prints result to stdout
+io.out "n! = " & fact(_pop()) & "\n"
+
+; remember to terminates
+ctrl.end
+
+; implementation of fact(int n)
+fact:
+    ctrl.goto fact_neg if _peek() < 0
+    ctrl.goto fact_1 if _peek() <= 1
+    stack.push _peek() - 1
+    ctrl.call fact
+    tape.write _pop() * _tape(0) at 0
+    ctrl.return
+fact_neg:
+    stack.pop
+    tape.write 0 at 0
+    ctrl.return
+fact_1:
+    stack.pop
+    tape.write 1 at 0
+    ctrl.return
+

@@ -1,0 +1,32 @@
+; prompts for number n
+io.out "n = "
+
+; reads n from stdin and pushes to k-stack
+io.in int
+
+; calls the fact procedure
+ctrl.call fact
+
+; prints result to stdout
+io.out "n! = " & _tape(0) & "\n"
+
+; remember to terminates
+ctrl.end
+
+; implementation of fact(int n)
+fact:
+    ctrl.goto fact_neg if _peek() < 0
+    ctrl.goto fact_1 if _peek() <= 1
+    stack.push _peek() - 1
+    ctrl.call fact
+    tape.write _pop() * _tape(0) at 0
+    ctrl.return
+fact_neg:
+    stack.pop
+    tape.write 0 at 0
+    ctrl.return
+fact_1:
+    stack.pop
+    tape.write 1 at 0
+    ctrl.return
+
