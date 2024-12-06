@@ -423,6 +423,10 @@ event.unhandle ev1 by label1
 Unregisters the event handler for the specified
 event at the specified label.
 
+Known issue: you should not unhandle an event from
+within a handler because that will mess up the
+handler list.
+
 ### `event.raise`
 
 ```

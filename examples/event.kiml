@@ -1,0 +1,29 @@
+func.decl int dayloop(int hour) = dayloop
+event.handle onWakeUp by bob
+event.handle onWakeUp by alice
+
+main:
+    io.out "=== If it's 7AM, wake people up.\n"
+    io.out "=== Enter hour (leave empty to exit): "
+    io.in string
+    ctrl.goto done if _peek() = ""
+    func.call dayloop(@(_pop()))
+    ctrl.goto main
+done:
+    ctrl.end
+
+dayloop:
+    ctrl.goto not_morning if _stack(1) <> 7
+    event.raise onWakeUp
+    ctrl.return
+    not_morning:
+        io.out "=== No one woke up yet.\n"
+        ctrl.return
+
+alice:
+    io.out "Alice: Good morning!\n"
+    ctrl.return
+
+bob:
+    io.out "Bob: What time is it?\n"
+    ctrl.return
