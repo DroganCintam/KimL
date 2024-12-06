@@ -511,3 +511,8 @@ KimL provides a set of built-in functions as listed below:
 - `_stack(int offset)`: returns a value on the stack, at the given offset from the top of the stack. _stack(1) returns the top value, _stack(2) returns the next to top value, and so on.
 - `_pop()`: pops and returns the top value on the stack.
 - `_peek()`: returns the top value on the stack.
+- `real min(real a, real b)`: takes 2 values and returns the lesser.
+- `real max(real a, real b)`: takes 2 values and returns the greater.
+- `real random()`: returns a random number in the range 0 (inclusive) through 1 (exclusive).
+- `int print(string s)`: prints the given value to stdout.
+- `string readln()`: reads a string from stdin.
